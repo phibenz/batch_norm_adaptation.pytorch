@@ -1,0 +1,27 @@
+[2021-05-07 04:41:57,537][INFO] #### Evaluation ####
+[2021-05-07 04:41:57,537][INFO] adapt_bn : True
+[2021-05-07 04:41:57,537][INFO] adaptation_batch_size : 32
+[2021-05-07 04:41:57,537][INFO] adaptation_dataset : cifar10c_defocus
+[2021-05-07 04:41:57,537][INFO] arch : resnet20_cifar10
+[2021-05-07 04:41:57,537][INFO] batch_size : 128
+[2021-05-07 04:41:57,537][INFO] dataset : cifar10
+[2021-05-07 04:41:57,538][INFO] evaluate_before_adaptation : True
+[2021-05-07 04:41:57,538][INFO] evaluation_dataset : cifar10c_defocus
+[2021-05-07 04:41:57,538][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10
+[2021-05-07 04:41:57,538][INFO] postfix : default
+[2021-05-07 04:41:57,538][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/cifar10c_defocus_1
+[2021-05-07 04:41:57,538][INFO] resume : None
+[2021-05-07 04:41:57,538][INFO] seed : 333
+[2021-05-07 04:41:57,538][INFO] severity : 1
+[2021-05-07 04:41:57,538][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics
+[2021-05-07 04:41:57,538][INFO] use_cuda : True
+[2021-05-07 04:41:57,538][INFO] workers : 4
+[2021-05-07 04:41:57,538][INFO] Getting adaptation dataset: cifar10c_defocus
+[2021-05-07 04:42:02,596][INFO] Evaluation before adaptation on: cifar10c_defocus
+[2021-05-07 04:42:03,707][INFO] ==Test== Prec@1 91.500 Prec@5 99.740 Error@1 8.500
+[2021-05-07 04:42:03,707][INFO] Eval:	Top1: 91.5	Top5: 99.74	Loss: 0.4042051591396332
+[2021-05-07 04:42:03,708][INFO] Adapting BN statistics...
+[2021-05-07 04:42:03,974][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics/cifar10c_defocus_1_default.pkl
+[2021-05-07 04:42:04,629][INFO] Evaluation after adaptation on: cifar10c_defocus
+[2021-05-07 04:42:05,719][INFO] ==Test== Prec@1 83.740 Prec@5 98.500 Error@1 16.260
+[2021-05-07 04:42:05,719][INFO] Adapt BN:	Top1: 83.74	Top5: 98.5	Loss: 0.682007510304451

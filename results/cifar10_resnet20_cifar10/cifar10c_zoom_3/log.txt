@@ -1,0 +1,27 @@
+[2021-05-07 04:45:58,373][INFO] #### Evaluation ####
+[2021-05-07 04:45:58,374][INFO] adapt_bn : True
+[2021-05-07 04:45:58,374][INFO] adaptation_batch_size : 32
+[2021-05-07 04:45:58,374][INFO] adaptation_dataset : cifar10c_zoom
+[2021-05-07 04:45:58,374][INFO] arch : resnet20_cifar10
+[2021-05-07 04:45:58,374][INFO] batch_size : 128
+[2021-05-07 04:45:58,374][INFO] dataset : cifar10
+[2021-05-07 04:45:58,374][INFO] evaluate_before_adaptation : True
+[2021-05-07 04:45:58,374][INFO] evaluation_dataset : cifar10c_zoom
+[2021-05-07 04:45:58,374][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10
+[2021-05-07 04:45:58,374][INFO] postfix : default
+[2021-05-07 04:45:58,374][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/cifar10c_zoom_3
+[2021-05-07 04:45:58,374][INFO] resume : None
+[2021-05-07 04:45:58,375][INFO] seed : 333
+[2021-05-07 04:45:58,375][INFO] severity : 3
+[2021-05-07 04:45:58,375][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics
+[2021-05-07 04:45:58,375][INFO] use_cuda : True
+[2021-05-07 04:45:58,375][INFO] workers : 4
+[2021-05-07 04:45:58,375][INFO] Getting adaptation dataset: cifar10c_zoom
+[2021-05-07 04:46:03,186][INFO] Evaluation before adaptation on: cifar10c_zoom
+[2021-05-07 04:46:04,118][INFO] ==Test== Prec@1 71.750 Prec@5 97.680 Error@1 28.250
+[2021-05-07 04:46:04,118][INFO] Eval:	Top1: 71.75	Top5: 97.68	Loss: 1.5795434825897217
+[2021-05-07 04:46:04,119][INFO] Adapting BN statistics...
+[2021-05-07 04:46:04,365][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics/cifar10c_zoom_3_default.pkl
+[2021-05-07 04:46:04,987][INFO] Evaluation after adaptation on: cifar10c_zoom
+[2021-05-07 04:46:05,918][INFO] ==Test== Prec@1 78.890 Prec@5 97.740 Error@1 21.110
+[2021-05-07 04:46:05,918][INFO] Adapt BN:	Top1: 78.89	Top5: 97.74	Loss: 0.9123552238702775

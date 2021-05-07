@@ -1,0 +1,27 @@
+[2021-05-07 04:45:05,407][INFO] #### Evaluation ####
+[2021-05-07 04:45:05,407][INFO] adapt_bn : True
+[2021-05-07 04:45:05,407][INFO] adaptation_batch_size : 32
+[2021-05-07 04:45:05,407][INFO] adaptation_dataset : cifar10c_motion
+[2021-05-07 04:45:05,407][INFO] arch : resnet20_cifar10
+[2021-05-07 04:45:05,407][INFO] batch_size : 128
+[2021-05-07 04:45:05,408][INFO] dataset : cifar10
+[2021-05-07 04:45:05,408][INFO] evaluate_before_adaptation : True
+[2021-05-07 04:45:05,408][INFO] evaluation_dataset : cifar10c_motion
+[2021-05-07 04:45:05,408][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10
+[2021-05-07 04:45:05,408][INFO] postfix : default
+[2021-05-07 04:45:05,408][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/cifar10c_motion_2
+[2021-05-07 04:45:05,408][INFO] resume : None
+[2021-05-07 04:45:05,408][INFO] seed : 333
+[2021-05-07 04:45:05,408][INFO] severity : 2
+[2021-05-07 04:45:05,408][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics
+[2021-05-07 04:45:05,408][INFO] use_cuda : True
+[2021-05-07 04:45:05,408][INFO] workers : 4
+[2021-05-07 04:45:05,408][INFO] Getting adaptation dataset: cifar10c_motion
+[2021-05-07 04:45:10,164][INFO] Evaluation before adaptation on: cifar10c_motion
+[2021-05-07 04:45:11,138][INFO] ==Test== Prec@1 75.640 Prec@5 98.200 Error@1 24.360
+[2021-05-07 04:45:11,139][INFO] Eval:	Top1: 75.64	Top5: 98.2	Loss: 1.3189671875
+[2021-05-07 04:45:11,139][INFO] Adapting BN statistics...
+[2021-05-07 04:45:11,375][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics/cifar10c_motion_2_default.pkl
+[2021-05-07 04:45:12,014][INFO] Evaluation after adaptation on: cifar10c_motion
+[2021-05-07 04:45:12,951][INFO] ==Test== Prec@1 78.020 Prec@5 97.590 Error@1 21.980
+[2021-05-07 04:45:12,951][INFO] Adapt BN:	Top1: 78.02	Top5: 97.59	Loss: 0.98108272356987

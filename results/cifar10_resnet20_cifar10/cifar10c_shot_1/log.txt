@@ -1,0 +1,27 @@
+[2021-05-07 04:34:41,740][INFO] #### Evaluation ####
+[2021-05-07 04:34:41,741][INFO] adapt_bn : True
+[2021-05-07 04:34:41,741][INFO] adaptation_batch_size : 32
+[2021-05-07 04:34:41,741][INFO] adaptation_dataset : cifar10c_shot
+[2021-05-07 04:34:41,741][INFO] arch : resnet20_cifar10
+[2021-05-07 04:34:41,741][INFO] batch_size : 128
+[2021-05-07 04:34:41,741][INFO] dataset : cifar10
+[2021-05-07 04:34:41,741][INFO] evaluate_before_adaptation : True
+[2021-05-07 04:34:41,741][INFO] evaluation_dataset : cifar10c_shot
+[2021-05-07 04:34:41,741][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10
+[2021-05-07 04:34:41,741][INFO] postfix : default
+[2021-05-07 04:34:41,741][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/cifar10c_shot_1
+[2021-05-07 04:34:41,741][INFO] resume : None
+[2021-05-07 04:34:41,741][INFO] seed : 333
+[2021-05-07 04:34:41,741][INFO] severity : 1
+[2021-05-07 04:34:41,742][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics
+[2021-05-07 04:34:41,742][INFO] use_cuda : True
+[2021-05-07 04:34:41,742][INFO] workers : 4
+[2021-05-07 04:34:41,742][INFO] Getting adaptation dataset: cifar10c_shot
+[2021-05-07 04:34:46,072][INFO] Evaluation before adaptation on: cifar10c_shot
+[2021-05-07 04:34:47,045][INFO] ==Test== Prec@1 81.070 Prec@5 98.620 Error@1 18.930
+[2021-05-07 04:34:47,045][INFO] Eval:	Top1: 81.07	Top5: 98.62	Loss: 1.0383798707962035
+[2021-05-07 04:34:47,045][INFO] Adapting BN statistics...
+[2021-05-07 04:34:47,337][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics/cifar10c_shot_1_default.pkl
+[2021-05-07 04:34:47,902][INFO] Evaluation after adaptation on: cifar10c_shot
+[2021-05-07 04:34:48,876][INFO] ==Test== Prec@1 77.470 Prec@5 97.590 Error@1 22.530
+[2021-05-07 04:34:48,876][INFO] Adapt BN:	Top1: 77.47	Top5: 97.59	Loss: 0.9854747270584107

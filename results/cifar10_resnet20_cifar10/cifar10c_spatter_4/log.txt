@@ -1,0 +1,27 @@
+[2021-05-07 04:43:54,528][INFO] #### Evaluation ####
+[2021-05-07 04:43:54,528][INFO] adapt_bn : True
+[2021-05-07 04:43:54,529][INFO] adaptation_batch_size : 32
+[2021-05-07 04:43:54,529][INFO] adaptation_dataset : cifar10c_spatter
+[2021-05-07 04:43:54,529][INFO] arch : resnet20_cifar10
+[2021-05-07 04:43:54,529][INFO] batch_size : 128
+[2021-05-07 04:43:54,529][INFO] dataset : cifar10
+[2021-05-07 04:43:54,529][INFO] evaluate_before_adaptation : True
+[2021-05-07 04:43:54,529][INFO] evaluation_dataset : cifar10c_spatter
+[2021-05-07 04:43:54,529][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10
+[2021-05-07 04:43:54,529][INFO] postfix : default
+[2021-05-07 04:43:54,529][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/cifar10c_spatter_4
+[2021-05-07 04:43:54,529][INFO] resume : None
+[2021-05-07 04:43:54,529][INFO] seed : 333
+[2021-05-07 04:43:54,529][INFO] severity : 4
+[2021-05-07 04:43:54,529][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics
+[2021-05-07 04:43:54,529][INFO] use_cuda : True
+[2021-05-07 04:43:54,529][INFO] workers : 4
+[2021-05-07 04:43:54,529][INFO] Getting adaptation dataset: cifar10c_spatter
+[2021-05-07 04:43:59,282][INFO] Evaluation before adaptation on: cifar10c_spatter
+[2021-05-07 04:44:00,296][INFO] ==Test== Prec@1 80.820 Prec@5 98.370 Error@1 19.180
+[2021-05-07 04:44:00,297][INFO] Eval:	Top1: 80.82	Top5: 98.37	Loss: 1.1017716833114624
+[2021-05-07 04:44:00,297][INFO] Adapting BN statistics...
+[2021-05-07 04:44:00,521][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics/cifar10c_spatter_4_default.pkl
+[2021-05-07 04:44:01,248][INFO] Evaluation after adaptation on: cifar10c_spatter
+[2021-05-07 04:44:02,263][INFO] ==Test== Prec@1 76.650 Prec@5 97.570 Error@1 23.350
+[2021-05-07 04:44:02,264][INFO] Adapt BN:	Top1: 76.65	Top5: 97.57	Loss: 1.0947646161079407

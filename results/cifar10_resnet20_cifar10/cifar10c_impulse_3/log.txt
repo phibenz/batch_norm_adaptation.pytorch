@@ -1,0 +1,27 @@
+[2021-05-07 04:35:39,589][INFO] #### Evaluation ####
+[2021-05-07 04:35:39,589][INFO] adapt_bn : True
+[2021-05-07 04:35:39,589][INFO] adaptation_batch_size : 32
+[2021-05-07 04:35:39,589][INFO] adaptation_dataset : cifar10c_impulse
+[2021-05-07 04:35:39,590][INFO] arch : resnet20_cifar10
+[2021-05-07 04:35:39,590][INFO] batch_size : 128
+[2021-05-07 04:35:39,590][INFO] dataset : cifar10
+[2021-05-07 04:35:39,590][INFO] evaluate_before_adaptation : True
+[2021-05-07 04:35:39,590][INFO] evaluation_dataset : cifar10c_impulse
+[2021-05-07 04:35:39,590][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10
+[2021-05-07 04:35:39,590][INFO] postfix : default
+[2021-05-07 04:35:39,590][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/cifar10c_impulse_3
+[2021-05-07 04:35:39,591][INFO] resume : None
+[2021-05-07 04:35:39,591][INFO] seed : 333
+[2021-05-07 04:35:39,591][INFO] severity : 3
+[2021-05-07 04:35:39,591][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics
+[2021-05-07 04:35:39,591][INFO] use_cuda : True
+[2021-05-07 04:35:39,591][INFO] workers : 4
+[2021-05-07 04:35:39,592][INFO] Getting adaptation dataset: cifar10c_impulse
+[2021-05-07 04:35:44,342][INFO] Evaluation before adaptation on: cifar10c_impulse
+[2021-05-07 04:35:45,389][INFO] ==Test== Prec@1 59.170 Prec@5 92.210 Error@1 40.830
+[2021-05-07 04:35:45,390][INFO] Eval:	Top1: 59.17	Top5: 92.21	Loss: 2.5576751468658445
+[2021-05-07 04:35:45,390][INFO] Adapting BN statistics...
+[2021-05-07 04:35:45,617][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics/cifar10c_impulse_3_default.pkl
+[2021-05-07 04:35:46,246][INFO] Evaluation after adaptation on: cifar10c_impulse
+[2021-05-07 04:35:47,228][INFO] ==Test== Prec@1 66.400 Prec@5 95.260 Error@1 33.600
+[2021-05-07 04:35:47,228][INFO] Adapt BN:	Top1: 66.4	Top5: 95.26	Loss: 1.6588102987289428

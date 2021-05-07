@@ -1,0 +1,27 @@
+[2021-05-07 04:37:06,664][INFO] #### Evaluation ####
+[2021-05-07 04:37:06,664][INFO] adapt_bn : True
+[2021-05-07 04:37:06,664][INFO] adaptation_batch_size : 32
+[2021-05-07 04:37:06,664][INFO] adaptation_dataset : cifar10c_elastic
+[2021-05-07 04:37:06,664][INFO] arch : resnet20_cifar10
+[2021-05-07 04:37:06,664][INFO] batch_size : 128
+[2021-05-07 04:37:06,664][INFO] dataset : cifar10
+[2021-05-07 04:37:06,664][INFO] evaluate_before_adaptation : True
+[2021-05-07 04:37:06,665][INFO] evaluation_dataset : cifar10c_elastic
+[2021-05-07 04:37:06,665][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10
+[2021-05-07 04:37:06,665][INFO] postfix : default
+[2021-05-07 04:37:06,665][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/cifar10c_elastic_3
+[2021-05-07 04:37:06,665][INFO] resume : None
+[2021-05-07 04:37:06,665][INFO] seed : 333
+[2021-05-07 04:37:06,665][INFO] severity : 3
+[2021-05-07 04:37:06,665][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics
+[2021-05-07 04:37:06,665][INFO] use_cuda : True
+[2021-05-07 04:37:06,665][INFO] workers : 4
+[2021-05-07 04:37:06,665][INFO] Getting adaptation dataset: cifar10c_elastic
+[2021-05-07 04:37:11,499][INFO] Evaluation before adaptation on: cifar10c_elastic
+[2021-05-07 04:37:12,485][INFO] ==Test== Prec@1 80.460 Prec@5 98.950 Error@1 19.540
+[2021-05-07 04:37:12,485][INFO] Eval:	Top1: 80.46	Top5: 98.95	Loss: 0.9942209002494812
+[2021-05-07 04:37:12,486][INFO] Adapting BN statistics...
+[2021-05-07 04:37:12,703][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics/cifar10c_elastic_3_default.pkl
+[2021-05-07 04:37:13,316][INFO] Evaluation after adaptation on: cifar10c_elastic
+[2021-05-07 04:37:14,359][INFO] ==Test== Prec@1 79.000 Prec@5 97.790 Error@1 21.000
+[2021-05-07 04:37:14,359][INFO] Adapt BN:	Top1: 79.0	Top5: 97.79	Loss: 0.9345341666221618

@@ -1,0 +1,27 @@
+[2021-05-07 04:45:14,038][INFO] #### Evaluation ####
+[2021-05-07 04:45:14,038][INFO] adapt_bn : True
+[2021-05-07 04:45:14,038][INFO] adaptation_batch_size : 32
+[2021-05-07 04:45:14,038][INFO] adaptation_dataset : cifar10c_motion
+[2021-05-07 04:45:14,038][INFO] arch : resnet20_cifar10
+[2021-05-07 04:45:14,039][INFO] batch_size : 128
+[2021-05-07 04:45:14,039][INFO] dataset : cifar10
+[2021-05-07 04:45:14,039][INFO] evaluate_before_adaptation : True
+[2021-05-07 04:45:14,039][INFO] evaluation_dataset : cifar10c_motion
+[2021-05-07 04:45:14,039][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10
+[2021-05-07 04:45:14,039][INFO] postfix : default
+[2021-05-07 04:45:14,039][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/cifar10c_motion_3
+[2021-05-07 04:45:14,039][INFO] resume : None
+[2021-05-07 04:45:14,039][INFO] seed : 333
+[2021-05-07 04:45:14,039][INFO] severity : 3
+[2021-05-07 04:45:14,039][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics
+[2021-05-07 04:45:14,039][INFO] use_cuda : True
+[2021-05-07 04:45:14,039][INFO] workers : 4
+[2021-05-07 04:45:14,040][INFO] Getting adaptation dataset: cifar10c_motion
+[2021-05-07 04:45:18,931][INFO] Evaluation before adaptation on: cifar10c_motion
+[2021-05-07 04:45:20,048][INFO] ==Test== Prec@1 65.850 Prec@5 96.110 Error@1 34.150
+[2021-05-07 04:45:20,048][INFO] Eval:	Top1: 65.85	Top5: 96.11	Loss: 2.050761471557617
+[2021-05-07 04:45:20,049][INFO] Adapting BN statistics...
+[2021-05-07 04:45:20,284][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics/cifar10c_motion_3_default.pkl
+[2021-05-07 04:45:20,952][INFO] Evaluation after adaptation on: cifar10c_motion
+[2021-05-07 04:45:21,950][INFO] ==Test== Prec@1 75.550 Prec@5 97.380 Error@1 24.450
+[2021-05-07 04:45:21,950][INFO] Adapt BN:	Top1: 75.55	Top5: 97.38	Loss: 1.130642333316803

@@ -1,0 +1,27 @@
+[2021-05-07 05:15:16,023][INFO] #### Evaluation ####
+[2021-05-07 05:15:16,023][INFO] adapt_bn : True
+[2021-05-07 05:15:16,023][INFO] adaptation_batch_size : 32
+[2021-05-07 05:15:16,023][INFO] adaptation_dataset : imagenetc_gaussian_blur
+[2021-05-07 05:15:16,023][INFO] arch : resnet18
+[2021-05-07 05:15:16,023][INFO] batch_size : 128
+[2021-05-07 05:15:16,024][INFO] dataset : imagenet
+[2021-05-07 05:15:16,024][INFO] evaluate_before_adaptation : True
+[2021-05-07 05:15:16,024][INFO] evaluation_dataset : imagenetc_gaussian_blur
+[2021-05-07 05:15:16,024][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18
+[2021-05-07 05:15:16,024][INFO] postfix : standard_32
+[2021-05-07 05:15:16,025][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/imagenetc_gaussian_blur_1
+[2021-05-07 05:15:16,025][INFO] resume : None
+[2021-05-07 05:15:16,025][INFO] seed : 333
+[2021-05-07 05:15:16,025][INFO] severity : 1
+[2021-05-07 05:15:16,025][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/statistics
+[2021-05-07 05:15:16,025][INFO] use_cuda : True
+[2021-05-07 05:15:16,025][INFO] workers : 4
+[2021-05-07 05:15:16,026][INFO] Getting adaptation dataset: imagenetc_gaussian_blur
+[2021-05-07 05:15:21,185][INFO] Evaluation before adaptation on: imagenetc_gaussian_blur
+[2021-05-07 05:15:58,704][INFO] ==Test== Prec@1 61.526 Prec@5 83.770 Error@1 38.474
+[2021-05-07 05:15:58,705][INFO] Eval:	Top1: 61.526	Top5: 83.77	Loss: 1.6292980780029296
+[2021-05-07 05:15:58,705][INFO] Adapting BN statistics...
+[2021-05-07 05:15:59,221][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/statistics/imagenetc_gaussian_blur_1_standard_32.pkl
+[2021-05-07 05:15:59,751][INFO] Evaluation after adaptation on: imagenetc_gaussian_blur
+[2021-05-07 05:16:36,244][INFO] ==Test== Prec@1 62.080 Prec@5 84.164 Error@1 37.920
+[2021-05-07 05:16:36,245][INFO] Adapt BN:	Top1: 62.08	Top5: 84.164	Loss: 1.6044554230499268

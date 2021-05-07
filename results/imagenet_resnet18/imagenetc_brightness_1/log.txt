@@ -1,0 +1,27 @@
+[2021-05-07 04:35:25,298][INFO] #### Evaluation ####
+[2021-05-07 04:35:25,298][INFO] adapt_bn : True
+[2021-05-07 04:35:25,298][INFO] adaptation_batch_size : 32
+[2021-05-07 04:35:25,298][INFO] adaptation_dataset : imagenetc_brightness
+[2021-05-07 04:35:25,298][INFO] arch : resnet18
+[2021-05-07 04:35:25,298][INFO] batch_size : 128
+[2021-05-07 04:35:25,298][INFO] dataset : imagenet
+[2021-05-07 04:35:25,298][INFO] evaluate_before_adaptation : True
+[2021-05-07 04:35:25,298][INFO] evaluation_dataset : imagenetc_brightness
+[2021-05-07 04:35:25,299][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18
+[2021-05-07 04:35:25,299][INFO] postfix : standard_32
+[2021-05-07 04:35:25,299][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/imagenetc_brightness_1
+[2021-05-07 04:35:25,299][INFO] resume : None
+[2021-05-07 04:35:25,299][INFO] seed : 333
+[2021-05-07 04:35:25,299][INFO] severity : 1
+[2021-05-07 04:35:25,299][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/statistics
+[2021-05-07 04:35:25,299][INFO] use_cuda : True
+[2021-05-07 04:35:25,299][INFO] workers : 4
+[2021-05-07 04:35:25,299][INFO] Getting adaptation dataset: imagenetc_brightness
+[2021-05-07 04:35:30,343][INFO] Evaluation before adaptation on: imagenetc_brightness
+[2021-05-07 04:36:09,409][INFO] ==Test== Prec@1 67.884 Prec@5 87.836 Error@1 32.116
+[2021-05-07 04:36:09,410][INFO] Eval:	Top1: 67.884	Top5: 87.836	Loss: 1.331413972091675
+[2021-05-07 04:36:09,410][INFO] Adapting BN statistics...
+[2021-05-07 04:36:09,844][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/statistics/imagenetc_brightness_1_standard_32.pkl
+[2021-05-07 04:36:10,376][INFO] Evaluation after adaptation on: imagenetc_brightness
+[2021-05-07 04:36:47,182][INFO] ==Test== Prec@1 66.234 Prec@5 86.936 Error@1 33.766
+[2021-05-07 04:36:47,183][INFO] Adapt BN:	Top1: 66.234	Top5: 86.936	Loss: 1.4017758515548706

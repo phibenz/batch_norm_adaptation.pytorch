@@ -1,0 +1,27 @@
+[2021-05-07 06:45:34,003][INFO] #### Evaluation ####
+[2021-05-07 06:45:34,003][INFO] adapt_bn : True
+[2021-05-07 06:45:34,003][INFO] adaptation_batch_size : 32
+[2021-05-07 06:45:34,003][INFO] adaptation_dataset : imagenetc_zoom_blur
+[2021-05-07 06:45:34,003][INFO] arch : resnet18
+[2021-05-07 06:45:34,003][INFO] batch_size : 128
+[2021-05-07 06:45:34,003][INFO] dataset : imagenet
+[2021-05-07 06:45:34,003][INFO] evaluate_before_adaptation : True
+[2021-05-07 06:45:34,003][INFO] evaluation_dataset : imagenetc_zoom_blur
+[2021-05-07 06:45:34,004][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18
+[2021-05-07 06:45:34,004][INFO] postfix : standard_32
+[2021-05-07 06:45:34,004][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/imagenetc_zoom_blur_5
+[2021-05-07 06:45:34,004][INFO] resume : None
+[2021-05-07 06:45:34,004][INFO] seed : 333
+[2021-05-07 06:45:34,004][INFO] severity : 5
+[2021-05-07 06:45:34,004][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/statistics
+[2021-05-07 06:45:34,004][INFO] use_cuda : True
+[2021-05-07 06:45:34,004][INFO] workers : 4
+[2021-05-07 06:45:34,004][INFO] Getting adaptation dataset: imagenetc_zoom_blur
+[2021-05-07 06:45:38,883][INFO] Evaluation before adaptation on: imagenetc_zoom_blur
+[2021-05-07 06:46:16,110][INFO] ==Test== Prec@1 17.642 Prec@5 35.512 Error@1 82.358
+[2021-05-07 06:46:16,111][INFO] Eval:	Top1: 17.642	Top5: 35.512	Loss: 4.8933831463623045
+[2021-05-07 06:46:16,111][INFO] Adapting BN statistics...
+[2021-05-07 06:46:16,528][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/statistics/imagenetc_zoom_blur_5_standard_32.pkl
+[2021-05-07 06:46:17,091][INFO] Evaluation after adaptation on: imagenetc_zoom_blur
+[2021-05-07 06:46:53,126][INFO] ==Test== Prec@1 31.524 Prec@5 55.764 Error@1 68.476
+[2021-05-07 06:46:53,126][INFO] Adapt BN:	Top1: 31.524	Top5: 55.764	Loss: 3.3909025817108156

@@ -1,0 +1,27 @@
+[2021-05-07 04:40:54,212][INFO] #### Evaluation ####
+[2021-05-07 04:40:54,212][INFO] adapt_bn : True
+[2021-05-07 04:40:54,213][INFO] adaptation_batch_size : 32
+[2021-05-07 04:40:54,213][INFO] adaptation_dataset : cifar100c_fog
+[2021-05-07 04:40:54,213][INFO] arch : resnet20_cifar100
+[2021-05-07 04:40:54,213][INFO] batch_size : 128
+[2021-05-07 04:40:54,213][INFO] dataset : cifar100
+[2021-05-07 04:40:54,213][INFO] evaluate_before_adaptation : True
+[2021-05-07 04:40:54,213][INFO] evaluation_dataset : cifar100c_fog
+[2021-05-07 04:40:54,213][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar100_resnet20_cifar100
+[2021-05-07 04:40:54,213][INFO] postfix : standard_32_v2
+[2021-05-07 04:40:54,213][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar100_resnet20_cifar100/cifar100c_fog_2
+[2021-05-07 04:40:54,213][INFO] resume : None
+[2021-05-07 04:40:54,213][INFO] seed : 333
+[2021-05-07 04:40:54,213][INFO] severity : 2
+[2021-05-07 04:40:54,213][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/cifar100_resnet20_cifar100/statistics
+[2021-05-07 04:40:54,213][INFO] use_cuda : True
+[2021-05-07 04:40:54,213][INFO] workers : 4
+[2021-05-07 04:40:54,214][INFO] Getting adaptation dataset: cifar100c_fog
+[2021-05-07 04:40:59,074][INFO] Evaluation before adaptation on: cifar100c_fog
+[2021-05-07 04:40:59,992][INFO] ==Test== Prec@1 61.130 Prec@5 86.990 Error@1 38.870
+[2021-05-07 04:40:59,992][INFO] Eval:	Top1: 61.13	Top5: 86.99	Loss: 1.855454051208496
+[2021-05-07 04:40:59,992][INFO] Adapting BN statistics...
+[2021-05-07 04:41:00,223][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/cifar100_resnet20_cifar100/statistics/cifar100c_fog_2_standard_32_v2.pkl
+[2021-05-07 04:41:00,902][INFO] Evaluation after adaptation on: cifar100c_fog
+[2021-05-07 04:41:01,849][INFO] ==Test== Prec@1 54.790 Prec@5 81.230 Error@1 45.210
+[2021-05-07 04:41:01,850][INFO] Adapt BN:	Top1: 54.79	Top5: 81.23	Loss: 2.0966247129440307

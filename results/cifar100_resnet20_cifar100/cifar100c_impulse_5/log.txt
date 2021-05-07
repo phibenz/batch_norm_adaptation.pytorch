@@ -1,0 +1,27 @@
+[2021-05-07 04:36:14,236][INFO] #### Evaluation ####
+[2021-05-07 04:36:14,237][INFO] adapt_bn : True
+[2021-05-07 04:36:14,237][INFO] adaptation_batch_size : 32
+[2021-05-07 04:36:14,237][INFO] adaptation_dataset : cifar100c_impulse
+[2021-05-07 04:36:14,237][INFO] arch : resnet20_cifar100
+[2021-05-07 04:36:14,237][INFO] batch_size : 128
+[2021-05-07 04:36:14,237][INFO] dataset : cifar100
+[2021-05-07 04:36:14,237][INFO] evaluate_before_adaptation : True
+[2021-05-07 04:36:14,237][INFO] evaluation_dataset : cifar100c_impulse
+[2021-05-07 04:36:14,237][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar100_resnet20_cifar100
+[2021-05-07 04:36:14,237][INFO] postfix : standard_32_v2
+[2021-05-07 04:36:14,237][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar100_resnet20_cifar100/cifar100c_impulse_5
+[2021-05-07 04:36:14,237][INFO] resume : None
+[2021-05-07 04:36:14,237][INFO] seed : 333
+[2021-05-07 04:36:14,237][INFO] severity : 5
+[2021-05-07 04:36:14,238][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/cifar100_resnet20_cifar100/statistics
+[2021-05-07 04:36:14,238][INFO] use_cuda : True
+[2021-05-07 04:36:14,238][INFO] workers : 4
+[2021-05-07 04:36:14,238][INFO] Getting adaptation dataset: cifar100c_impulse
+[2021-05-07 04:36:19,124][INFO] Evaluation before adaptation on: cifar100c_impulse
+[2021-05-07 04:36:20,162][INFO] ==Test== Prec@1 7.120 Prec@5 19.030 Error@1 92.880
+[2021-05-07 04:36:20,162][INFO] Eval:	Top1: 7.12	Top5: 19.03	Loss: 9.604671507263184
+[2021-05-07 04:36:20,162][INFO] Adapting BN statistics...
+[2021-05-07 04:36:20,383][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/cifar100_resnet20_cifar100/statistics/cifar100c_impulse_5_standard_32_v2.pkl
+[2021-05-07 04:36:21,000][INFO] Evaluation after adaptation on: cifar100c_impulse
+[2021-05-07 04:36:22,031][INFO] ==Test== Prec@1 22.810 Prec@5 49.270 Error@1 77.190
+[2021-05-07 04:36:22,032][INFO] Adapt BN:	Top1: 22.81	Top5: 49.27	Loss: 4.6883113502502445

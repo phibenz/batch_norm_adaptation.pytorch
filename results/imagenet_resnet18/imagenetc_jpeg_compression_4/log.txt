@@ -1,0 +1,27 @@
+[2021-05-07 05:47:40,035][INFO] #### Evaluation ####
+[2021-05-07 05:47:40,035][INFO] adapt_bn : True
+[2021-05-07 05:47:40,035][INFO] adaptation_batch_size : 32
+[2021-05-07 05:47:40,035][INFO] adaptation_dataset : imagenetc_jpeg_compression
+[2021-05-07 05:47:40,036][INFO] arch : resnet18
+[2021-05-07 05:47:40,036][INFO] batch_size : 128
+[2021-05-07 05:47:40,036][INFO] dataset : imagenet
+[2021-05-07 05:47:40,036][INFO] evaluate_before_adaptation : True
+[2021-05-07 05:47:40,036][INFO] evaluation_dataset : imagenetc_jpeg_compression
+[2021-05-07 05:47:40,036][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18
+[2021-05-07 05:47:40,036][INFO] postfix : standard_32
+[2021-05-07 05:47:40,036][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/imagenetc_jpeg_compression_4
+[2021-05-07 05:47:40,036][INFO] resume : None
+[2021-05-07 05:47:40,036][INFO] seed : 333
+[2021-05-07 05:47:40,036][INFO] severity : 4
+[2021-05-07 05:47:40,036][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/statistics
+[2021-05-07 05:47:40,036][INFO] use_cuda : True
+[2021-05-07 05:47:40,036][INFO] workers : 4
+[2021-05-07 05:47:40,036][INFO] Getting adaptation dataset: imagenetc_jpeg_compression
+[2021-05-07 05:47:44,957][INFO] Evaluation before adaptation on: imagenetc_jpeg_compression
+[2021-05-07 05:48:21,174][INFO] ==Test== Prec@1 43.014 Prec@5 67.886 Error@1 56.986
+[2021-05-07 05:48:21,174][INFO] Eval:	Top1: 43.014	Top5: 67.886	Loss: 2.6732962339019775
+[2021-05-07 05:48:21,174][INFO] Adapting BN statistics...
+[2021-05-07 05:48:21,600][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/statistics/imagenetc_jpeg_compression_4_standard_32.pkl
+[2021-05-07 05:48:22,189][INFO] Evaluation after adaptation on: imagenetc_jpeg_compression
+[2021-05-07 05:48:57,378][INFO] ==Test== Prec@1 46.116 Prec@5 70.846 Error@1 53.884
+[2021-05-07 05:48:57,378][INFO] Adapt BN:	Top1: 46.116	Top5: 70.846	Loss: 2.4798628846740725

@@ -1,0 +1,27 @@
+[2021-05-07 05:26:08,492][INFO] #### Evaluation ####
+[2021-05-07 05:26:08,492][INFO] adapt_bn : True
+[2021-05-07 05:26:08,493][INFO] adaptation_batch_size : 32
+[2021-05-07 05:26:08,493][INFO] adaptation_dataset : imagenetc_gaussian_noise
+[2021-05-07 05:26:08,493][INFO] arch : resnet18
+[2021-05-07 05:26:08,493][INFO] batch_size : 128
+[2021-05-07 05:26:08,493][INFO] dataset : imagenet
+[2021-05-07 05:26:08,493][INFO] evaluate_before_adaptation : True
+[2021-05-07 05:26:08,493][INFO] evaluation_dataset : imagenetc_gaussian_noise
+[2021-05-07 05:26:08,493][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18
+[2021-05-07 05:26:08,493][INFO] postfix : standard_32
+[2021-05-07 05:26:08,493][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/imagenetc_gaussian_noise_4
+[2021-05-07 05:26:08,493][INFO] resume : None
+[2021-05-07 05:26:08,493][INFO] seed : 333
+[2021-05-07 05:26:08,493][INFO] severity : 4
+[2021-05-07 05:26:08,493][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/statistics
+[2021-05-07 05:26:08,493][INFO] use_cuda : True
+[2021-05-07 05:26:08,493][INFO] workers : 4
+[2021-05-07 05:26:08,493][INFO] Getting adaptation dataset: imagenetc_gaussian_noise
+[2021-05-07 05:26:13,283][INFO] Evaluation before adaptation on: imagenetc_gaussian_noise
+[2021-05-07 05:26:55,327][INFO] ==Test== Prec@1 6.096 Prec@5 16.234 Error@1 93.904
+[2021-05-07 05:26:55,327][INFO] Eval:	Top1: 6.096	Top5: 16.234	Loss: 6.292730519256592
+[2021-05-07 05:26:55,327][INFO] Adapting BN statistics...
+[2021-05-07 05:26:55,750][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/statistics/imagenetc_gaussian_noise_4_standard_32.pkl
+[2021-05-07 05:26:56,296][INFO] Evaluation after adaptation on: imagenetc_gaussian_noise
+[2021-05-07 05:27:35,766][INFO] ==Test== Prec@1 24.624 Prec@5 45.580 Error@1 75.376
+[2021-05-07 05:27:35,767][INFO] Adapt BN:	Top1: 24.624	Top5: 45.58	Loss: 4.016349923706055

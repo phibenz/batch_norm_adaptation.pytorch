@@ -1,0 +1,27 @@
+[2021-05-07 04:42:25,566][INFO] #### Evaluation ####
+[2021-05-07 04:42:25,566][INFO] adapt_bn : True
+[2021-05-07 04:42:25,566][INFO] adaptation_batch_size : 32
+[2021-05-07 04:42:25,566][INFO] adaptation_dataset : cifar10c_defocus
+[2021-05-07 04:42:25,566][INFO] arch : resnet20_cifar10
+[2021-05-07 04:42:25,566][INFO] batch_size : 128
+[2021-05-07 04:42:25,566][INFO] dataset : cifar10
+[2021-05-07 04:42:25,566][INFO] evaluate_before_adaptation : True
+[2021-05-07 04:42:25,567][INFO] evaluation_dataset : cifar10c_defocus
+[2021-05-07 04:42:25,567][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10
+[2021-05-07 04:42:25,567][INFO] postfix : default
+[2021-05-07 04:42:25,567][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/cifar10c_defocus_4
+[2021-05-07 04:42:25,567][INFO] resume : None
+[2021-05-07 04:42:25,567][INFO] seed : 333
+[2021-05-07 04:42:25,567][INFO] severity : 4
+[2021-05-07 04:42:25,567][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics
+[2021-05-07 04:42:25,567][INFO] use_cuda : True
+[2021-05-07 04:42:25,567][INFO] workers : 4
+[2021-05-07 04:42:25,567][INFO] Getting adaptation dataset: cifar10c_defocus
+[2021-05-07 04:42:30,347][INFO] Evaluation before adaptation on: cifar10c_defocus
+[2021-05-07 04:42:31,410][INFO] ==Test== Prec@1 71.960 Prec@5 98.220 Error@1 28.040
+[2021-05-07 04:42:31,411][INFO] Eval:	Top1: 71.96	Top5: 98.22	Loss: 1.644531498336792
+[2021-05-07 04:42:31,411][INFO] Adapting BN statistics...
+[2021-05-07 04:42:31,716][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics/cifar10c_defocus_4_default.pkl
+[2021-05-07 04:42:32,272][INFO] Evaluation after adaptation on: cifar10c_defocus
+[2021-05-07 04:42:33,426][INFO] ==Test== Prec@1 81.420 Prec@5 98.330 Error@1 18.580
+[2021-05-07 04:42:33,426][INFO] Adapt BN:	Top1: 81.42	Top5: 98.33	Loss: 0.8153390954971313

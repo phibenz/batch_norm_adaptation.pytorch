@@ -1,0 +1,27 @@
+[2021-05-07 04:33:43,462][INFO] #### Evaluation ####
+[2021-05-07 04:33:43,462][INFO] adapt_bn : True
+[2021-05-07 04:33:43,462][INFO] adaptation_batch_size : 32
+[2021-05-07 04:33:43,462][INFO] adaptation_dataset : cifar10c_gaussian_noise
+[2021-05-07 04:33:43,462][INFO] arch : resnet20_cifar10
+[2021-05-07 04:33:43,462][INFO] batch_size : 128
+[2021-05-07 04:33:43,462][INFO] dataset : cifar10
+[2021-05-07 04:33:43,463][INFO] evaluate_before_adaptation : True
+[2021-05-07 04:33:43,463][INFO] evaluation_dataset : cifar10c_gaussian_noise
+[2021-05-07 04:33:43,463][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10
+[2021-05-07 04:33:43,463][INFO] postfix : default
+[2021-05-07 04:33:43,463][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/cifar10c_gaussian_noise_4
+[2021-05-07 04:33:43,463][INFO] resume : None
+[2021-05-07 04:33:43,463][INFO] seed : 333
+[2021-05-07 04:33:43,463][INFO] severity : 4
+[2021-05-07 04:33:43,463][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics
+[2021-05-07 04:33:43,463][INFO] use_cuda : True
+[2021-05-07 04:33:43,463][INFO] workers : 4
+[2021-05-07 04:33:43,464][INFO] Getting adaptation dataset: cifar10c_gaussian_noise
+[2021-05-07 04:33:47,742][INFO] Evaluation before adaptation on: cifar10c_gaussian_noise
+[2021-05-07 04:33:48,716][INFO] ==Test== Prec@1 28.010 Prec@5 78.450 Error@1 71.990
+[2021-05-07 04:33:48,716][INFO] Eval:	Top1: 28.01	Top5: 78.45	Loss: 6.685443305969239
+[2021-05-07 04:33:48,716][INFO] Adapting BN statistics...
+[2021-05-07 04:33:48,988][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics/cifar10c_gaussian_noise_4_default.pkl
+[2021-05-07 04:33:49,545][INFO] Evaluation after adaptation on: cifar10c_gaussian_noise
+[2021-05-07 04:33:50,608][INFO] ==Test== Prec@1 59.220 Prec@5 92.880 Error@1 40.780
+[2021-05-07 04:33:50,608][INFO] Adapt BN:	Top1: 59.22	Top5: 92.88	Loss: 2.115020902633667

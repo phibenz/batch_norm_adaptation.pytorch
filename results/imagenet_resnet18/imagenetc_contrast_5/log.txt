@@ -1,0 +1,27 @@
+[2021-05-07 04:47:44,864][INFO] #### Evaluation ####
+[2021-05-07 04:47:44,864][INFO] adapt_bn : True
+[2021-05-07 04:47:44,864][INFO] adaptation_batch_size : 32
+[2021-05-07 04:47:44,864][INFO] adaptation_dataset : imagenetc_contrast
+[2021-05-07 04:47:44,864][INFO] arch : resnet18
+[2021-05-07 04:47:44,864][INFO] batch_size : 128
+[2021-05-07 04:47:44,864][INFO] dataset : imagenet
+[2021-05-07 04:47:44,864][INFO] evaluate_before_adaptation : True
+[2021-05-07 04:47:44,864][INFO] evaluation_dataset : imagenetc_contrast
+[2021-05-07 04:47:44,864][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18
+[2021-05-07 04:47:44,864][INFO] postfix : standard_32
+[2021-05-07 04:47:44,864][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/imagenetc_contrast_5
+[2021-05-07 04:47:44,864][INFO] resume : None
+[2021-05-07 04:47:44,864][INFO] seed : 333
+[2021-05-07 04:47:44,864][INFO] severity : 5
+[2021-05-07 04:47:44,864][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/statistics
+[2021-05-07 04:47:44,864][INFO] use_cuda : True
+[2021-05-07 04:47:44,864][INFO] workers : 4
+[2021-05-07 04:47:44,865][INFO] Getting adaptation dataset: imagenetc_contrast
+[2021-05-07 04:47:49,479][INFO] Evaluation before adaptation on: imagenetc_contrast
+[2021-05-07 04:48:25,939][INFO] ==Test== Prec@1 3.444 Prec@5 9.750 Error@1 96.556
+[2021-05-07 04:48:25,939][INFO] Eval:	Top1: 3.444	Top5: 9.75	Loss: 6.432610281066895
+[2021-05-07 04:48:25,940][INFO] Adapting BN statistics...
+[2021-05-07 04:48:26,305][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/statistics/imagenetc_contrast_5_standard_32.pkl
+[2021-05-07 04:48:26,835][INFO] Evaluation after adaptation on: imagenetc_contrast
+[2021-05-07 04:49:02,312][INFO] ==Test== Prec@1 9.120 Prec@5 21.282 Error@1 90.880
+[2021-05-07 04:49:02,313][INFO] Adapt BN:	Top1: 9.12	Top5: 21.282	Loss: 6.0986126953125

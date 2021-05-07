@@ -1,0 +1,27 @@
+[2021-05-07 04:34:08,086][INFO] #### Evaluation ####
+[2021-05-07 04:34:08,086][INFO] adapt_bn : True
+[2021-05-07 04:34:08,086][INFO] adaptation_batch_size : 32
+[2021-05-07 04:34:08,086][INFO] adaptation_dataset : cifar10c_speckle
+[2021-05-07 04:34:08,087][INFO] arch : resnet20_cifar10
+[2021-05-07 04:34:08,087][INFO] batch_size : 128
+[2021-05-07 04:34:08,087][INFO] dataset : cifar10
+[2021-05-07 04:34:08,087][INFO] evaluate_before_adaptation : True
+[2021-05-07 04:34:08,087][INFO] evaluation_dataset : cifar10c_speckle
+[2021-05-07 04:34:08,087][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10
+[2021-05-07 04:34:08,087][INFO] postfix : default
+[2021-05-07 04:34:08,087][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/cifar10c_speckle_2
+[2021-05-07 04:34:08,087][INFO] resume : None
+[2021-05-07 04:34:08,087][INFO] seed : 333
+[2021-05-07 04:34:08,087][INFO] severity : 2
+[2021-05-07 04:34:08,087][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics
+[2021-05-07 04:34:08,087][INFO] use_cuda : True
+[2021-05-07 04:34:08,087][INFO] workers : 4
+[2021-05-07 04:34:08,087][INFO] Getting adaptation dataset: cifar10c_speckle
+[2021-05-07 04:34:12,478][INFO] Evaluation before adaptation on: cifar10c_speckle
+[2021-05-07 04:34:13,364][INFO] ==Test== Prec@1 65.180 Prec@5 95.600 Error@1 34.820
+[2021-05-07 04:34:13,364][INFO] Eval:	Top1: 65.18	Top5: 95.6	Loss: 2.326953792190552
+[2021-05-07 04:34:13,365][INFO] Adapting BN statistics...
+[2021-05-07 04:34:13,602][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics/cifar10c_speckle_2_default.pkl
+[2021-05-07 04:34:14,170][INFO] Evaluation after adaptation on: cifar10c_speckle
+[2021-05-07 04:34:15,132][INFO] ==Test== Prec@1 70.830 Prec@5 96.230 Error@1 29.170
+[2021-05-07 04:34:15,133][INFO] Adapt BN:	Top1: 70.83	Top5: 96.23	Loss: 1.414762094116211

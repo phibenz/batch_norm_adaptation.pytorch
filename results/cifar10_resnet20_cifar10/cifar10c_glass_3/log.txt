@@ -1,0 +1,27 @@
+[2021-05-07 04:44:30,072][INFO] #### Evaluation ####
+[2021-05-07 04:44:30,072][INFO] adapt_bn : True
+[2021-05-07 04:44:30,072][INFO] adaptation_batch_size : 32
+[2021-05-07 04:44:30,072][INFO] adaptation_dataset : cifar10c_glass
+[2021-05-07 04:44:30,072][INFO] arch : resnet20_cifar10
+[2021-05-07 04:44:30,072][INFO] batch_size : 128
+[2021-05-07 04:44:30,072][INFO] dataset : cifar10
+[2021-05-07 04:44:30,072][INFO] evaluate_before_adaptation : True
+[2021-05-07 04:44:30,073][INFO] evaluation_dataset : cifar10c_glass
+[2021-05-07 04:44:30,073][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10
+[2021-05-07 04:44:30,073][INFO] postfix : default
+[2021-05-07 04:44:30,073][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/cifar10c_glass_3
+[2021-05-07 04:44:30,073][INFO] resume : None
+[2021-05-07 04:44:30,073][INFO] seed : 333
+[2021-05-07 04:44:30,073][INFO] severity : 3
+[2021-05-07 04:44:30,073][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics
+[2021-05-07 04:44:30,073][INFO] use_cuda : True
+[2021-05-07 04:44:30,073][INFO] workers : 4
+[2021-05-07 04:44:30,073][INFO] Getting adaptation dataset: cifar10c_glass
+[2021-05-07 04:44:34,673][INFO] Evaluation before adaptation on: cifar10c_glass
+[2021-05-07 04:44:35,615][INFO] ==Test== Prec@1 51.220 Prec@5 91.200 Error@1 48.780
+[2021-05-07 04:44:35,616][INFO] Eval:	Top1: 51.22	Top5: 91.2	Loss: 3.225454557418823
+[2021-05-07 04:44:35,616][INFO] Adapting BN statistics...
+[2021-05-07 04:44:35,844][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics/cifar10c_glass_3_default.pkl
+[2021-05-07 04:44:36,512][INFO] Evaluation after adaptation on: cifar10c_glass
+[2021-05-07 04:44:37,513][INFO] ==Test== Prec@1 62.480 Prec@5 94.590 Error@1 37.520
+[2021-05-07 04:44:37,514][INFO] Adapt BN:	Top1: 62.48	Top5: 94.59	Loss: 1.8348820808410644

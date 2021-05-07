@@ -1,0 +1,27 @@
+[2021-05-07 04:46:16,089][INFO] #### Evaluation ####
+[2021-05-07 04:46:16,089][INFO] adapt_bn : True
+[2021-05-07 04:46:16,089][INFO] adaptation_batch_size : 32
+[2021-05-07 04:46:16,089][INFO] adaptation_dataset : cifar10c_zoom
+[2021-05-07 04:46:16,089][INFO] arch : resnet20_cifar10
+[2021-05-07 04:46:16,089][INFO] batch_size : 128
+[2021-05-07 04:46:16,090][INFO] dataset : cifar10
+[2021-05-07 04:46:16,090][INFO] evaluate_before_adaptation : True
+[2021-05-07 04:46:16,090][INFO] evaluation_dataset : cifar10c_zoom
+[2021-05-07 04:46:16,090][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10
+[2021-05-07 04:46:16,090][INFO] postfix : default
+[2021-05-07 04:46:16,090][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/cifar10c_zoom_5
+[2021-05-07 04:46:16,090][INFO] resume : None
+[2021-05-07 04:46:16,090][INFO] seed : 333
+[2021-05-07 04:46:16,090][INFO] severity : 5
+[2021-05-07 04:46:16,090][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics
+[2021-05-07 04:46:16,090][INFO] use_cuda : True
+[2021-05-07 04:46:16,090][INFO] workers : 4
+[2021-05-07 04:46:16,090][INFO] Getting adaptation dataset: cifar10c_zoom
+[2021-05-07 04:46:20,928][INFO] Evaluation before adaptation on: cifar10c_zoom
+[2021-05-07 04:46:21,851][INFO] ==Test== Prec@1 56.080 Prec@5 93.480 Error@1 43.920
+[2021-05-07 04:46:21,851][INFO] Eval:	Top1: 56.08	Top5: 93.48	Loss: 2.8254266929626466
+[2021-05-07 04:46:21,851][INFO] Adapting BN statistics...
+[2021-05-07 04:46:22,094][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics/cifar10c_zoom_5_default.pkl
+[2021-05-07 04:46:22,772][INFO] Evaluation after adaptation on: cifar10c_zoom
+[2021-05-07 04:46:23,766][INFO] ==Test== Prec@1 74.690 Prec@5 96.930 Error@1 25.310
+[2021-05-07 04:46:23,767][INFO] Adapt BN:	Top1: 74.69	Top5: 96.93	Loss: 1.1464720034599305

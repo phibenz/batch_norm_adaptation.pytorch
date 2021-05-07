@@ -1,0 +1,27 @@
+[2021-05-07 06:29:40,741][INFO] #### Evaluation ####
+[2021-05-07 06:29:40,742][INFO] adapt_bn : True
+[2021-05-07 06:29:40,742][INFO] adaptation_batch_size : 32
+[2021-05-07 06:29:40,742][INFO] adaptation_dataset : imagenetc_spatter
+[2021-05-07 06:29:40,742][INFO] arch : resnet18
+[2021-05-07 06:29:40,742][INFO] batch_size : 128
+[2021-05-07 06:29:40,742][INFO] dataset : imagenet
+[2021-05-07 06:29:40,742][INFO] evaluate_before_adaptation : True
+[2021-05-07 06:29:40,742][INFO] evaluation_dataset : imagenetc_spatter
+[2021-05-07 06:29:40,742][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18
+[2021-05-07 06:29:40,742][INFO] postfix : standard_32
+[2021-05-07 06:29:40,742][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/imagenetc_spatter_4
+[2021-05-07 06:29:40,742][INFO] resume : None
+[2021-05-07 06:29:40,742][INFO] seed : 333
+[2021-05-07 06:29:40,742][INFO] severity : 4
+[2021-05-07 06:29:40,742][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/statistics
+[2021-05-07 06:29:40,742][INFO] use_cuda : True
+[2021-05-07 06:29:40,743][INFO] workers : 4
+[2021-05-07 06:29:40,743][INFO] Getting adaptation dataset: imagenetc_spatter
+[2021-05-07 06:29:45,545][INFO] Evaluation before adaptation on: imagenetc_spatter
+[2021-05-07 06:30:26,460][INFO] ==Test== Prec@1 29.608 Prec@5 52.772 Error@1 70.392
+[2021-05-07 06:30:26,460][INFO] Eval:	Top1: 29.608	Top5: 52.772	Loss: 3.9053739263153076
+[2021-05-07 06:30:26,460][INFO] Adapting BN statistics...
+[2021-05-07 06:30:26,878][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/statistics/imagenetc_spatter_4_standard_32.pkl
+[2021-05-07 06:30:27,432][INFO] Evaluation after adaptation on: imagenetc_spatter
+[2021-05-07 06:31:05,367][INFO] ==Test== Prec@1 40.976 Prec@5 65.506 Error@1 59.024
+[2021-05-07 06:31:05,367][INFO] Adapt BN:	Top1: 40.976	Top5: 65.506	Loss: 2.8016286486053468

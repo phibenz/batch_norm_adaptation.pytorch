@@ -1,0 +1,27 @@
+[2021-05-07 05:12:24,956][INFO] #### Evaluation ####
+[2021-05-07 05:12:24,957][INFO] adapt_bn : True
+[2021-05-07 05:12:24,957][INFO] adaptation_batch_size : 32
+[2021-05-07 05:12:24,957][INFO] adaptation_dataset : imagenetc_frost
+[2021-05-07 05:12:24,957][INFO] arch : resnet18
+[2021-05-07 05:12:24,957][INFO] batch_size : 128
+[2021-05-07 05:12:24,957][INFO] dataset : imagenet
+[2021-05-07 05:12:24,957][INFO] evaluate_before_adaptation : True
+[2021-05-07 05:12:24,957][INFO] evaluation_dataset : imagenetc_frost
+[2021-05-07 05:12:24,957][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18
+[2021-05-07 05:12:24,957][INFO] postfix : standard_32
+[2021-05-07 05:12:24,957][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/imagenetc_frost_4
+[2021-05-07 05:12:24,957][INFO] resume : None
+[2021-05-07 05:12:24,957][INFO] seed : 333
+[2021-05-07 05:12:24,957][INFO] severity : 4
+[2021-05-07 05:12:24,957][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/statistics
+[2021-05-07 05:12:24,957][INFO] use_cuda : True
+[2021-05-07 05:12:24,957][INFO] workers : 4
+[2021-05-07 05:12:24,957][INFO] Getting adaptation dataset: imagenetc_frost
+[2021-05-07 05:12:29,615][INFO] Evaluation before adaptation on: imagenetc_frost
+[2021-05-07 05:13:09,659][INFO] ==Test== Prec@1 22.326 Prec@5 41.658 Error@1 77.674
+[2021-05-07 05:13:09,659][INFO] Eval:	Top1: 22.326	Top5: 41.658	Loss: 4.499005877380371
+[2021-05-07 05:13:09,659][INFO] Adapting BN statistics...
+[2021-05-07 05:13:10,049][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/statistics/imagenetc_frost_4_standard_32.pkl
+[2021-05-07 05:13:10,589][INFO] Evaluation after adaptation on: imagenetc_frost
+[2021-05-07 05:13:49,222][INFO] ==Test== Prec@1 31.076 Prec@5 53.030 Error@1 68.924
+[2021-05-07 05:13:49,222][INFO] Adapt BN:	Top1: 31.076	Top5: 53.03	Loss: 3.59405677444458

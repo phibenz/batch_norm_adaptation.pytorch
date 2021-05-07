@@ -1,0 +1,27 @@
+[2021-05-07 04:35:14,325][INFO] #### Evaluation ####
+[2021-05-07 04:35:14,325][INFO] adapt_bn : True
+[2021-05-07 04:35:14,325][INFO] adaptation_batch_size : 32
+[2021-05-07 04:35:14,325][INFO] adaptation_dataset : cifar10c_shot
+[2021-05-07 04:35:14,325][INFO] arch : resnet20_cifar10
+[2021-05-07 04:35:14,325][INFO] batch_size : 128
+[2021-05-07 04:35:14,325][INFO] dataset : cifar10
+[2021-05-07 04:35:14,325][INFO] evaluate_before_adaptation : True
+[2021-05-07 04:35:14,325][INFO] evaluation_dataset : cifar10c_shot
+[2021-05-07 04:35:14,325][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10
+[2021-05-07 04:35:14,325][INFO] postfix : default
+[2021-05-07 04:35:14,325][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/cifar10c_shot_5
+[2021-05-07 04:35:14,325][INFO] resume : None
+[2021-05-07 04:35:14,325][INFO] seed : 333
+[2021-05-07 04:35:14,325][INFO] severity : 5
+[2021-05-07 04:35:14,325][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics
+[2021-05-07 04:35:14,326][INFO] use_cuda : True
+[2021-05-07 04:35:14,326][INFO] workers : 4
+[2021-05-07 04:35:14,326][INFO] Getting adaptation dataset: cifar10c_shot
+[2021-05-07 04:35:18,711][INFO] Evaluation before adaptation on: cifar10c_shot
+[2021-05-07 04:35:19,755][INFO] ==Test== Prec@1 28.780 Prec@5 78.060 Error@1 71.220
+[2021-05-07 04:35:19,755][INFO] Eval:	Top1: 28.78	Top5: 78.06	Loss: 6.640363451385498
+[2021-05-07 04:35:19,755][INFO] Adapting BN statistics...
+[2021-05-07 04:35:20,027][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics/cifar10c_shot_5_default.pkl
+[2021-05-07 04:35:20,589][INFO] Evaluation after adaptation on: cifar10c_shot
+[2021-05-07 04:35:21,581][INFO] ==Test== Prec@1 56.010 Prec@5 92.350 Error@1 43.990
+[2021-05-07 04:35:21,581][INFO] Adapt BN:	Top1: 56.01	Top5: 92.35	Loss: 2.4638433362960814

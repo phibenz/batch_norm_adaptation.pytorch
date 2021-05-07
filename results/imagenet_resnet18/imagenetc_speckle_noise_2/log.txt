@@ -1,0 +1,27 @@
+[2021-05-07 06:34:07,112][INFO] #### Evaluation ####
+[2021-05-07 06:34:07,112][INFO] adapt_bn : True
+[2021-05-07 06:34:07,112][INFO] adaptation_batch_size : 32
+[2021-05-07 06:34:07,112][INFO] adaptation_dataset : imagenetc_speckle_noise
+[2021-05-07 06:34:07,112][INFO] arch : resnet18
+[2021-05-07 06:34:07,112][INFO] batch_size : 128
+[2021-05-07 06:34:07,112][INFO] dataset : imagenet
+[2021-05-07 06:34:07,112][INFO] evaluate_before_adaptation : True
+[2021-05-07 06:34:07,112][INFO] evaluation_dataset : imagenetc_speckle_noise
+[2021-05-07 06:34:07,112][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18
+[2021-05-07 06:34:07,112][INFO] postfix : standard_32
+[2021-05-07 06:34:07,112][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/imagenetc_speckle_noise_2
+[2021-05-07 06:34:07,113][INFO] resume : None
+[2021-05-07 06:34:07,113][INFO] seed : 333
+[2021-05-07 06:34:07,113][INFO] severity : 2
+[2021-05-07 06:34:07,113][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/statistics
+[2021-05-07 06:34:07,113][INFO] use_cuda : True
+[2021-05-07 06:34:07,113][INFO] workers : 4
+[2021-05-07 06:34:07,113][INFO] Getting adaptation dataset: imagenetc_speckle_noise
+[2021-05-07 06:34:11,948][INFO] Evaluation before adaptation on: imagenetc_speckle_noise
+[2021-05-07 06:34:54,383][INFO] ==Test== Prec@1 42.818 Prec@5 67.218 Error@1 57.182
+[2021-05-07 06:34:54,383][INFO] Eval:	Top1: 42.818	Top5: 67.218	Loss: 2.7057174852752683
+[2021-05-07 06:34:54,384][INFO] Adapting BN statistics...
+[2021-05-07 06:34:54,845][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/statistics/imagenetc_speckle_noise_2_standard_32.pkl
+[2021-05-07 06:34:55,418][INFO] Evaluation after adaptation on: imagenetc_speckle_noise
+[2021-05-07 06:35:35,508][INFO] ==Test== Prec@1 52.846 Prec@5 76.414 Error@1 47.154
+[2021-05-07 06:35:35,509][INFO] Adapt BN:	Top1: 52.846	Top5: 76.414	Loss: 2.111040132369995

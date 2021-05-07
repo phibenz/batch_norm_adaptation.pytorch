@@ -1,0 +1,27 @@
+[2021-05-07 04:43:28,281][INFO] #### Evaluation ####
+[2021-05-07 04:43:28,281][INFO] adapt_bn : True
+[2021-05-07 04:43:28,282][INFO] adaptation_batch_size : 32
+[2021-05-07 04:43:28,282][INFO] adaptation_dataset : cifar10c_spatter
+[2021-05-07 04:43:28,282][INFO] arch : resnet20_cifar10
+[2021-05-07 04:43:28,282][INFO] batch_size : 128
+[2021-05-07 04:43:28,282][INFO] dataset : cifar10
+[2021-05-07 04:43:28,282][INFO] evaluate_before_adaptation : True
+[2021-05-07 04:43:28,282][INFO] evaluation_dataset : cifar10c_spatter
+[2021-05-07 04:43:28,282][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10
+[2021-05-07 04:43:28,282][INFO] postfix : default
+[2021-05-07 04:43:28,282][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/cifar10c_spatter_1
+[2021-05-07 04:43:28,282][INFO] resume : None
+[2021-05-07 04:43:28,282][INFO] seed : 333
+[2021-05-07 04:43:28,282][INFO] severity : 1
+[2021-05-07 04:43:28,282][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics
+[2021-05-07 04:43:28,282][INFO] use_cuda : True
+[2021-05-07 04:43:28,282][INFO] workers : 4
+[2021-05-07 04:43:28,283][INFO] Getting adaptation dataset: cifar10c_spatter
+[2021-05-07 04:43:33,257][INFO] Evaluation before adaptation on: cifar10c_spatter
+[2021-05-07 04:43:34,332][INFO] ==Test== Prec@1 88.350 Prec@5 99.260 Error@1 11.650
+[2021-05-07 04:43:34,332][INFO] Eval:	Top1: 88.35	Top5: 99.26	Loss: 0.5897695741653443
+[2021-05-07 04:43:34,332][INFO] Adapting BN statistics...
+[2021-05-07 04:43:34,581][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics/cifar10c_spatter_1_default.pkl
+[2021-05-07 04:43:35,231][INFO] Evaluation after adaptation on: cifar10c_spatter
+[2021-05-07 04:43:36,154][INFO] ==Test== Prec@1 81.330 Prec@5 98.030 Error@1 18.670
+[2021-05-07 04:43:36,154][INFO] Adapt BN:	Top1: 81.33	Top5: 98.03	Loss: 0.8132603103637696

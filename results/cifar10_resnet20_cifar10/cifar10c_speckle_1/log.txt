@@ -1,0 +1,27 @@
+[2021-05-07 04:33:59,905][INFO] #### Evaluation ####
+[2021-05-07 04:33:59,905][INFO] adapt_bn : True
+[2021-05-07 04:33:59,906][INFO] adaptation_batch_size : 32
+[2021-05-07 04:33:59,906][INFO] adaptation_dataset : cifar10c_speckle
+[2021-05-07 04:33:59,906][INFO] arch : resnet20_cifar10
+[2021-05-07 04:33:59,906][INFO] batch_size : 128
+[2021-05-07 04:33:59,906][INFO] dataset : cifar10
+[2021-05-07 04:33:59,906][INFO] evaluate_before_adaptation : True
+[2021-05-07 04:33:59,906][INFO] evaluation_dataset : cifar10c_speckle
+[2021-05-07 04:33:59,906][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10
+[2021-05-07 04:33:59,906][INFO] postfix : default
+[2021-05-07 04:33:59,906][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/cifar10c_speckle_1
+[2021-05-07 04:33:59,906][INFO] resume : None
+[2021-05-07 04:33:59,906][INFO] seed : 333
+[2021-05-07 04:33:59,906][INFO] severity : 1
+[2021-05-07 04:33:59,906][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics
+[2021-05-07 04:33:59,906][INFO] use_cuda : True
+[2021-05-07 04:33:59,906][INFO] workers : 4
+[2021-05-07 04:33:59,907][INFO] Getting adaptation dataset: cifar10c_speckle
+[2021-05-07 04:34:04,221][INFO] Evaluation before adaptation on: cifar10c_speckle
+[2021-05-07 04:34:05,171][INFO] ==Test== Prec@1 81.250 Prec@5 98.520 Error@1 18.750
+[2021-05-07 04:34:05,172][INFO] Eval:	Top1: 81.25	Top5: 98.52	Loss: 1.0220474994659423
+[2021-05-07 04:34:05,172][INFO] Adapting BN statistics...
+[2021-05-07 04:34:05,461][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics/cifar10c_speckle_1_default.pkl
+[2021-05-07 04:34:06,029][INFO] Evaluation after adaptation on: cifar10c_speckle
+[2021-05-07 04:34:07,040][INFO] ==Test== Prec@1 76.490 Prec@5 97.450 Error@1 23.510
+[2021-05-07 04:34:07,041][INFO] Adapt BN:	Top1: 76.49	Top5: 97.45	Loss: 1.0859723554611207

@@ -1,0 +1,27 @@
+[2021-05-07 05:58:19,903][INFO] #### Evaluation ####
+[2021-05-07 05:58:19,903][INFO] adapt_bn : True
+[2021-05-07 05:58:19,903][INFO] adaptation_batch_size : 32
+[2021-05-07 05:58:19,903][INFO] adaptation_dataset : imagenetc_pixelate
+[2021-05-07 05:58:19,903][INFO] arch : resnet18
+[2021-05-07 05:58:19,903][INFO] batch_size : 128
+[2021-05-07 05:58:19,903][INFO] dataset : imagenet
+[2021-05-07 05:58:19,903][INFO] evaluate_before_adaptation : True
+[2021-05-07 05:58:19,903][INFO] evaluation_dataset : imagenetc_pixelate
+[2021-05-07 05:58:19,903][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18
+[2021-05-07 05:58:19,903][INFO] postfix : standard_32
+[2021-05-07 05:58:19,903][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/imagenetc_pixelate_2
+[2021-05-07 05:58:19,903][INFO] resume : None
+[2021-05-07 05:58:19,903][INFO] seed : 333
+[2021-05-07 05:58:19,904][INFO] severity : 2
+[2021-05-07 05:58:19,904][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/statistics
+[2021-05-07 05:58:19,904][INFO] use_cuda : True
+[2021-05-07 05:58:19,904][INFO] workers : 4
+[2021-05-07 05:58:19,904][INFO] Getting adaptation dataset: imagenetc_pixelate
+[2021-05-07 05:58:24,801][INFO] Evaluation before adaptation on: imagenetc_pixelate
+[2021-05-07 05:59:04,497][INFO] ==Test== Prec@1 60.192 Prec@5 82.726 Error@1 39.808
+[2021-05-07 05:59:04,497][INFO] Eval:	Top1: 60.192	Top5: 82.726	Loss: 1.7097549697875976
+[2021-05-07 05:59:04,497][INFO] Adapting BN statistics...
+[2021-05-07 05:59:04,958][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/statistics/imagenetc_pixelate_2_standard_32.pkl
+[2021-05-07 05:59:05,495][INFO] Evaluation after adaptation on: imagenetc_pixelate
+[2021-05-07 05:59:44,748][INFO] ==Test== Prec@1 60.900 Prec@5 83.378 Error@1 39.100
+[2021-05-07 05:59:44,748][INFO] Adapt BN:	Top1: 60.9	Top5: 83.378	Loss: 1.657417541732788

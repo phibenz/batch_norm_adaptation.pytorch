@@ -1,0 +1,27 @@
+[2021-05-07 04:43:19,225][INFO] #### Evaluation ####
+[2021-05-07 04:43:19,225][INFO] adapt_bn : True
+[2021-05-07 04:43:19,225][INFO] adaptation_batch_size : 32
+[2021-05-07 04:43:19,225][INFO] adaptation_dataset : cifar10c_frost
+[2021-05-07 04:43:19,225][INFO] arch : resnet20_cifar10
+[2021-05-07 04:43:19,226][INFO] batch_size : 128
+[2021-05-07 04:43:19,226][INFO] dataset : cifar10
+[2021-05-07 04:43:19,226][INFO] evaluate_before_adaptation : True
+[2021-05-07 04:43:19,226][INFO] evaluation_dataset : cifar10c_frost
+[2021-05-07 04:43:19,226][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10
+[2021-05-07 04:43:19,226][INFO] postfix : default
+[2021-05-07 04:43:19,226][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/cifar10c_frost_5
+[2021-05-07 04:43:19,226][INFO] resume : None
+[2021-05-07 04:43:19,226][INFO] seed : 333
+[2021-05-07 04:43:19,226][INFO] severity : 5
+[2021-05-07 04:43:19,226][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics
+[2021-05-07 04:43:19,226][INFO] use_cuda : True
+[2021-05-07 04:43:19,226][INFO] workers : 4
+[2021-05-07 04:43:19,226][INFO] Getting adaptation dataset: cifar10c_frost
+[2021-05-07 04:43:24,046][INFO] Evaluation before adaptation on: cifar10c_frost
+[2021-05-07 04:43:25,000][INFO] ==Test== Prec@1 53.540 Prec@5 89.120 Error@1 46.460
+[2021-05-07 04:43:25,000][INFO] Eval:	Top1: 53.54	Top5: 89.12	Loss: 3.3882913146972657
+[2021-05-07 04:43:25,000][INFO] Adapting BN statistics...
+[2021-05-07 04:43:25,256][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics/cifar10c_frost_5_default.pkl
+[2021-05-07 04:43:25,954][INFO] Evaluation after adaptation on: cifar10c_frost
+[2021-05-07 04:43:27,123][INFO] ==Test== Prec@1 62.560 Prec@5 92.170 Error@1 37.440
+[2021-05-07 04:43:27,124][INFO] Adapt BN:	Top1: 62.56	Top5: 92.17	Loss: 1.7191465003967286

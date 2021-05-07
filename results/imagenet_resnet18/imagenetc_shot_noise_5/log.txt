@@ -1,0 +1,27 @@
+[2021-05-07 06:16:48,586][INFO] #### Evaluation ####
+[2021-05-07 06:16:48,586][INFO] adapt_bn : True
+[2021-05-07 06:16:48,587][INFO] adaptation_batch_size : 32
+[2021-05-07 06:16:48,587][INFO] adaptation_dataset : imagenetc_shot_noise
+[2021-05-07 06:16:48,587][INFO] arch : resnet18
+[2021-05-07 06:16:48,587][INFO] batch_size : 128
+[2021-05-07 06:16:48,587][INFO] dataset : imagenet
+[2021-05-07 06:16:48,587][INFO] evaluate_before_adaptation : True
+[2021-05-07 06:16:48,587][INFO] evaluation_dataset : imagenetc_shot_noise
+[2021-05-07 06:16:48,587][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18
+[2021-05-07 06:16:48,587][INFO] postfix : standard_32
+[2021-05-07 06:16:48,587][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/imagenetc_shot_noise_5
+[2021-05-07 06:16:48,587][INFO] resume : None
+[2021-05-07 06:16:48,587][INFO] seed : 333
+[2021-05-07 06:16:48,587][INFO] severity : 5
+[2021-05-07 06:16:48,587][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/statistics
+[2021-05-07 06:16:48,587][INFO] use_cuda : True
+[2021-05-07 06:16:48,588][INFO] workers : 4
+[2021-05-07 06:16:48,588][INFO] Getting adaptation dataset: imagenetc_shot_noise
+[2021-05-07 06:16:53,379][INFO] Evaluation before adaptation on: imagenetc_shot_noise
+[2021-05-07 06:17:38,126][INFO] ==Test== Prec@1 1.806 Prec@5 5.754 Error@1 98.194
+[2021-05-07 06:17:38,126][INFO] Eval:	Top1: 1.806	Top5: 5.754	Loss: 8.008669806518554
+[2021-05-07 06:17:38,127][INFO] Adapting BN statistics...
+[2021-05-07 06:17:38,454][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/statistics/imagenetc_shot_noise_5_standard_32.pkl
+[2021-05-07 06:17:39,006][INFO] Evaluation after adaptation on: imagenetc_shot_noise
+[2021-05-07 06:18:20,381][INFO] ==Test== Prec@1 13.756 Prec@5 29.476 Error@1 86.244
+[2021-05-07 06:18:20,382][INFO] Adapt BN:	Top1: 13.756	Top5: 29.476	Loss: 5.077709785461426

@@ -1,0 +1,27 @@
+[2021-05-07 04:41:20,153][INFO] #### Evaluation ####
+[2021-05-07 04:41:20,153][INFO] adapt_bn : True
+[2021-05-07 04:41:20,153][INFO] adaptation_batch_size : 32
+[2021-05-07 04:41:20,153][INFO] adaptation_dataset : cifar10c_brightness
+[2021-05-07 04:41:20,153][INFO] arch : resnet20_cifar10
+[2021-05-07 04:41:20,153][INFO] batch_size : 128
+[2021-05-07 04:41:20,153][INFO] dataset : cifar10
+[2021-05-07 04:41:20,153][INFO] evaluate_before_adaptation : True
+[2021-05-07 04:41:20,153][INFO] evaluation_dataset : cifar10c_brightness
+[2021-05-07 04:41:20,153][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10
+[2021-05-07 04:41:20,153][INFO] postfix : default
+[2021-05-07 04:41:20,154][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/cifar10c_brightness_2
+[2021-05-07 04:41:20,154][INFO] resume : None
+[2021-05-07 04:41:20,154][INFO] seed : 333
+[2021-05-07 04:41:20,154][INFO] severity : 2
+[2021-05-07 04:41:20,154][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics
+[2021-05-07 04:41:20,154][INFO] use_cuda : True
+[2021-05-07 04:41:20,154][INFO] workers : 4
+[2021-05-07 04:41:20,154][INFO] Getting adaptation dataset: cifar10c_brightness
+[2021-05-07 04:41:25,114][INFO] Evaluation before adaptation on: cifar10c_brightness
+[2021-05-07 04:41:26,195][INFO] ==Test== Prec@1 90.960 Prec@5 99.670 Error@1 9.040
+[2021-05-07 04:41:26,196][INFO] Eval:	Top1: 90.96	Top5: 99.67	Loss: 0.43061255793571473
+[2021-05-07 04:41:26,196][INFO] Adapting BN statistics...
+[2021-05-07 04:41:26,489][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics/cifar10c_brightness_2_default.pkl
+[2021-05-07 04:41:27,155][INFO] Evaluation after adaptation on: cifar10c_brightness
+[2021-05-07 04:41:28,248][INFO] ==Test== Prec@1 83.250 Prec@5 98.350 Error@1 16.750
+[2021-05-07 04:41:28,248][INFO] Adapt BN:	Top1: 83.25	Top5: 98.35	Loss: 0.7065374404907226

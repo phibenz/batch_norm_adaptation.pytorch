@@ -1,0 +1,27 @@
+[2021-05-07 04:43:18,245][INFO] #### Evaluation ####
+[2021-05-07 04:43:18,246][INFO] adapt_bn : True
+[2021-05-07 04:43:18,246][INFO] adaptation_batch_size : 32
+[2021-05-07 04:43:18,246][INFO] adaptation_dataset : cifar100c_frost
+[2021-05-07 04:43:18,246][INFO] arch : resnet20_cifar100
+[2021-05-07 04:43:18,246][INFO] batch_size : 128
+[2021-05-07 04:43:18,246][INFO] dataset : cifar100
+[2021-05-07 04:43:18,246][INFO] evaluate_before_adaptation : True
+[2021-05-07 04:43:18,246][INFO] evaluation_dataset : cifar100c_frost
+[2021-05-07 04:43:18,246][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar100_resnet20_cifar100
+[2021-05-07 04:43:18,246][INFO] postfix : standard_32_v2
+[2021-05-07 04:43:18,246][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar100_resnet20_cifar100/cifar100c_frost_3
+[2021-05-07 04:43:18,246][INFO] resume : None
+[2021-05-07 04:43:18,246][INFO] seed : 333
+[2021-05-07 04:43:18,246][INFO] severity : 3
+[2021-05-07 04:43:18,247][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/cifar100_resnet20_cifar100/statistics
+[2021-05-07 04:43:18,247][INFO] use_cuda : True
+[2021-05-07 04:43:18,247][INFO] workers : 4
+[2021-05-07 04:43:18,247][INFO] Getting adaptation dataset: cifar100c_frost
+[2021-05-07 04:43:23,074][INFO] Evaluation before adaptation on: cifar100c_frost
+[2021-05-07 04:43:24,046][INFO] ==Test== Prec@1 32.800 Prec@5 61.520 Error@1 67.200
+[2021-05-07 04:43:24,047][INFO] Eval:	Top1: 32.8	Top5: 61.52	Loss: 4.745550381469727
+[2021-05-07 04:43:24,047][INFO] Adapting BN statistics...
+[2021-05-07 04:43:24,284][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/cifar100_resnet20_cifar100/statistics/cifar100c_frost_3_standard_32_v2.pkl
+[2021-05-07 04:43:24,932][INFO] Evaluation after adaptation on: cifar100c_frost
+[2021-05-07 04:43:25,896][INFO] ==Test== Prec@1 42.310 Prec@5 71.410 Error@1 57.690
+[2021-05-07 04:43:25,896][INFO] Adapt BN:	Top1: 42.31	Top5: 71.41	Loss: 3.047512309265137

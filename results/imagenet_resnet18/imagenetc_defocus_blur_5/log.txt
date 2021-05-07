@@ -1,0 +1,27 @@
+[2021-05-07 04:54:13,207][INFO] #### Evaluation ####
+[2021-05-07 04:54:13,207][INFO] adapt_bn : True
+[2021-05-07 04:54:13,207][INFO] adaptation_batch_size : 32
+[2021-05-07 04:54:13,207][INFO] adaptation_dataset : imagenetc_defocus_blur
+[2021-05-07 04:54:13,207][INFO] arch : resnet18
+[2021-05-07 04:54:13,207][INFO] batch_size : 128
+[2021-05-07 04:54:13,207][INFO] dataset : imagenet
+[2021-05-07 04:54:13,207][INFO] evaluate_before_adaptation : True
+[2021-05-07 04:54:13,207][INFO] evaluation_dataset : imagenetc_defocus_blur
+[2021-05-07 04:54:13,207][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18
+[2021-05-07 04:54:13,207][INFO] postfix : standard_32
+[2021-05-07 04:54:13,207][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/imagenetc_defocus_blur_5
+[2021-05-07 04:54:13,208][INFO] resume : None
+[2021-05-07 04:54:13,208][INFO] seed : 333
+[2021-05-07 04:54:13,208][INFO] severity : 5
+[2021-05-07 04:54:13,208][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/statistics
+[2021-05-07 04:54:13,208][INFO] use_cuda : True
+[2021-05-07 04:54:13,208][INFO] workers : 4
+[2021-05-07 04:54:13,208][INFO] Getting adaptation dataset: imagenetc_defocus_blur
+[2021-05-07 04:54:17,894][INFO] Evaluation before adaptation on: imagenetc_defocus_blur
+[2021-05-07 04:54:52,177][INFO] ==Test== Prec@1 11.438 Prec@5 26.068 Error@1 88.562
+[2021-05-07 04:54:52,177][INFO] Eval:	Top1: 11.438	Top5: 26.068	Loss: 5.130183336334229
+[2021-05-07 04:54:52,177][INFO] Adapting BN statistics...
+[2021-05-07 04:54:52,566][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/statistics/imagenetc_defocus_blur_5_standard_32.pkl
+[2021-05-07 04:54:53,095][INFO] Evaluation after adaptation on: imagenetc_defocus_blur
+[2021-05-07 04:55:26,102][INFO] ==Test== Prec@1 11.090 Prec@5 25.770 Error@1 88.910
+[2021-05-07 04:55:26,102][INFO] Adapt BN:	Top1: 11.09	Top5: 25.77	Loss: 5.265921748352051

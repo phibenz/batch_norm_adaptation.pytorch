@@ -1,0 +1,27 @@
+[2021-05-07 05:51:40,843][INFO] #### Evaluation ####
+[2021-05-07 05:51:40,844][INFO] adapt_bn : True
+[2021-05-07 05:51:40,844][INFO] adaptation_batch_size : 32
+[2021-05-07 05:51:40,844][INFO] adaptation_dataset : imagenetc_motion_blur
+[2021-05-07 05:51:40,844][INFO] arch : resnet18
+[2021-05-07 05:51:40,844][INFO] batch_size : 128
+[2021-05-07 05:51:40,844][INFO] dataset : imagenet
+[2021-05-07 05:51:40,844][INFO] evaluate_before_adaptation : True
+[2021-05-07 05:51:40,844][INFO] evaluation_dataset : imagenetc_motion_blur
+[2021-05-07 05:51:40,844][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18
+[2021-05-07 05:51:40,844][INFO] postfix : standard_32
+[2021-05-07 05:51:40,844][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/imagenetc_motion_blur_2
+[2021-05-07 05:51:40,844][INFO] resume : None
+[2021-05-07 05:51:40,844][INFO] seed : 333
+[2021-05-07 05:51:40,844][INFO] severity : 2
+[2021-05-07 05:51:40,844][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/statistics
+[2021-05-07 05:51:40,844][INFO] use_cuda : True
+[2021-05-07 05:51:40,844][INFO] workers : 4
+[2021-05-07 05:51:40,844][INFO] Getting adaptation dataset: imagenetc_motion_blur
+[2021-05-07 05:51:45,688][INFO] Evaluation before adaptation on: imagenetc_motion_blur
+[2021-05-07 05:52:22,989][INFO] ==Test== Prec@1 45.418 Prec@5 69.408 Error@1 54.582
+[2021-05-07 05:52:22,989][INFO] Eval:	Top1: 45.418	Top5: 69.408	Loss: 2.555998489303589
+[2021-05-07 05:52:22,990][INFO] Adapting BN statistics...
+[2021-05-07 05:52:23,454][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/statistics/imagenetc_motion_blur_2_standard_32.pkl
+[2021-05-07 05:52:24,026][INFO] Evaluation after adaptation on: imagenetc_motion_blur
+[2021-05-07 05:52:59,433][INFO] ==Test== Prec@1 51.442 Prec@5 75.384 Error@1 48.558
+[2021-05-07 05:52:59,434][INFO] Adapt BN:	Top1: 51.442	Top5: 75.384	Loss: 2.175242082824707

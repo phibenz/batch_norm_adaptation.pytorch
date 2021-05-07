@@ -1,0 +1,27 @@
+[2021-05-07 04:36:31,957][INFO] #### Evaluation ####
+[2021-05-07 04:36:31,958][INFO] adapt_bn : True
+[2021-05-07 04:36:31,958][INFO] adaptation_batch_size : 32
+[2021-05-07 04:36:31,958][INFO] adaptation_dataset : cifar10c_contrast
+[2021-05-07 04:36:31,958][INFO] arch : resnet20_cifar10
+[2021-05-07 04:36:31,958][INFO] batch_size : 128
+[2021-05-07 04:36:31,958][INFO] dataset : cifar10
+[2021-05-07 04:36:31,958][INFO] evaluate_before_adaptation : True
+[2021-05-07 04:36:31,958][INFO] evaluation_dataset : cifar10c_contrast
+[2021-05-07 04:36:31,958][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10
+[2021-05-07 04:36:31,958][INFO] postfix : default
+[2021-05-07 04:36:31,958][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/cifar10c_contrast_4
+[2021-05-07 04:36:31,958][INFO] resume : None
+[2021-05-07 04:36:31,958][INFO] seed : 333
+[2021-05-07 04:36:31,958][INFO] severity : 4
+[2021-05-07 04:36:31,958][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics
+[2021-05-07 04:36:31,958][INFO] use_cuda : True
+[2021-05-07 04:36:31,958][INFO] workers : 4
+[2021-05-07 04:36:31,959][INFO] Getting adaptation dataset: cifar10c_contrast
+[2021-05-07 04:36:36,681][INFO] Evaluation before adaptation on: cifar10c_contrast
+[2021-05-07 04:36:37,705][INFO] ==Test== Prec@1 67.890 Prec@5 96.760 Error@1 32.110
+[2021-05-07 04:36:37,706][INFO] Eval:	Top1: 67.89	Top5: 96.76	Loss: 1.693855259513855
+[2021-05-07 04:36:37,706][INFO] Adapting BN statistics...
+[2021-05-07 04:36:37,925][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/cifar10_resnet20_cifar10/statistics/cifar10c_contrast_4_default.pkl
+[2021-05-07 04:36:38,526][INFO] Evaluation after adaptation on: cifar10c_contrast
+[2021-05-07 04:36:39,584][INFO] ==Test== Prec@1 79.650 Prec@5 96.300 Error@1 20.350
+[2021-05-07 04:36:39,584][INFO] Adapt BN:	Top1: 79.65	Top5: 96.3	Loss: 0.8195560651779175

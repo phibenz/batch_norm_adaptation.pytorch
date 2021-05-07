@@ -1,0 +1,27 @@
+[2021-05-07 05:42:02,624][INFO] #### Evaluation ####
+[2021-05-07 05:42:02,624][INFO] adapt_bn : True
+[2021-05-07 05:42:02,624][INFO] adaptation_batch_size : 32
+[2021-05-07 05:42:02,624][INFO] adaptation_dataset : imagenetc_impulse_noise
+[2021-05-07 05:42:02,624][INFO] arch : resnet18
+[2021-05-07 05:42:02,624][INFO] batch_size : 128
+[2021-05-07 05:42:02,624][INFO] dataset : imagenet
+[2021-05-07 05:42:02,624][INFO] evaluate_before_adaptation : True
+[2021-05-07 05:42:02,624][INFO] evaluation_dataset : imagenetc_impulse_noise
+[2021-05-07 05:42:02,624][INFO] model_path : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18
+[2021-05-07 05:42:02,625][INFO] postfix : standard_32
+[2021-05-07 05:42:02,625][INFO] result_path : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/imagenetc_impulse_noise_5
+[2021-05-07 05:42:02,625][INFO] resume : None
+[2021-05-07 05:42:02,625][INFO] seed : 333
+[2021-05-07 05:42:02,625][INFO] severity : 5
+[2021-05-07 05:42:02,625][INFO] stats_folder : /workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/statistics
+[2021-05-07 05:42:02,625][INFO] use_cuda : True
+[2021-05-07 05:42:02,625][INFO] workers : 4
+[2021-05-07 05:42:02,625][INFO] Getting adaptation dataset: imagenetc_impulse_noise
+[2021-05-07 05:42:08,105][INFO] Evaluation before adaptation on: imagenetc_impulse_noise
+[2021-05-07 05:42:52,374][INFO] ==Test== Prec@1 1.000 Prec@5 3.970 Error@1 99.000
+[2021-05-07 05:42:52,375][INFO] Eval:	Top1: 1.0	Top5: 3.97	Loss: 8.254836800231933
+[2021-05-07 05:42:52,375][INFO] Adapting BN statistics...
+[2021-05-07 05:42:52,879][INFO] Storing statistics to :/workspace/Projects/batch_norm_adaptation.public/results/imagenet_resnet18/statistics/imagenetc_impulse_noise_5_standard_32.pkl
+[2021-05-07 05:42:53,450][INFO] Evaluation after adaptation on: imagenetc_impulse_noise
+[2021-05-07 05:43:34,378][INFO] ==Test== Prec@1 12.666 Prec@5 27.186 Error@1 87.334
+[2021-05-07 05:43:34,379][INFO] Adapt BN:	Top1: 12.666	Top5: 27.186	Loss: 5.184282394714355
